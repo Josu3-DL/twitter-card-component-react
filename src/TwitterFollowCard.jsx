@@ -27,7 +27,10 @@ const TwitterFollowCard = ({ Username, name, initialisFollowing}) => {
             </header>
             <aside>
                 <button className={buttonClassname} onClick={handleBotton}
-                >{text}</button>
+                >
+                    <span className='tw-followCard-text'>{text}</span>
+                    <span className='tw-followCard-stopFollow'>Dejar de seguir</span>
+                </button>
             </aside>
         </article>
     )
